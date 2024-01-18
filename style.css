@@ -285,6 +285,61 @@ input[type="text"], .when, .selcet-type, .find-btn{
     margin-bottom: 20px;
 }
 
+
+
+/*Why Choose us */
+
+.why-choose{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.why-choose p{
+    width: 500;
+}
+
+/* hotel cards */
+
+.hotel-card{
+    width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+
+}
+
+.card1, .card2{
+    background-color: rgba(251, 181, 99, 0.05);
+    height: 284px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 30px;
+}
+
+.card2{
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card1 p, .card2 p{
+    width: 500px;
+}
+
+.hotel-icon i{
+    font-size: 38px;
+    color: #FF5400;
+}
+
+
 /* to make responsive header and hero section */
 
 @media screen and (max-width: 600px) {
