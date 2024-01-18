@@ -136,6 +136,154 @@ input[type="text"], .when, .selcet-type, .find-btn{
 }
 
 
+/* popular tours */
+
+.about-tours{
+    width: 1170px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.tour-img{
+    height: 550px;
+}
+
+.tour-img img{
+    height: 100%;
+}
+.descrip-box h3{
+    display: inline;
+    color: #131318;
+    font-size: 30px;
+    font-weight: 800;
+    float: left;
+}
+
+.descrip-box p{
+    width: 500px;
+    line-height: 27px;
+    color: rgba(19, 19, 24, 0.80);
+    text-transform: capitalize;
+}
+
+.descrip-box ul {
+    margin-left: 50px;
+    line-height: 27px;
+    color: rgba(19, 19, 24, 0.80);
+    text-transform: capitalize;
+}
+.descrip-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.descrip-box button {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    background-color: #FF5400;
+}
+
+
+/*choose your destination part */
+
+.choose-box{
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.maldive-img, .indonesia-img, .srilonka-img,
+.america-img, .kasmir-img, .bangladesh-img,
+.bandarban-img {
+    height: 300px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.img-box1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.img-box2{
+    display: grid;
+    grid-template-columns: 0.9fr 1fr 0.6fr;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.img-box3{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+.maldive-img{
+    background-image: url(Rectangle\ 5.png);
+}
+
+.indonesia-img{
+    background-image: url(Rectangle\ 8.png);
+}
+
+.srilonka-img{
+    background-image: url(Rectangle\ 6.png);
+}
+
+.america-img{
+    background-image: url(Rectangle\ 7.png);
+}
+
+.kasmir-img{
+    background-image: url(Rectangle\ 9.png);
+}
+
+.bangladesh-img{
+    background-image: url(Rectangle\ 11.png);
+}
+
+.bandarban-img{
+    background-image: url(Rectangle\ 10.png);
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section h3{
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.section p{
+    text-align: center;
+    width: 600px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
 
 /* to make responsive header and hero section */
 
@@ -144,17 +292,18 @@ input[type="text"], .when, .selcet-type, .find-btn{
         display: inline-block;
     }
     .header{
-        width: 375px;
+        width: 400px;
         height: 64px;
         justify-content: space-between;
         font-size: 22px;
+        margin: 0 auto;
     }
     .logo img{
         width: 60%;
     }
 
     .logo{
-        margin-left: -55px;
+        /* margin-left: -55px; */
     }
 
     .menu-icon {
@@ -163,7 +312,7 @@ input[type="text"], .when, .selcet-type, .find-btn{
 
     .logo-name h3{
         font-size: 22px;
-        margin-left: -100px;
+        margin-left: -50px;
     }
 
     .navbar{
@@ -171,12 +320,15 @@ input[type="text"], .when, .selcet-type, .find-btn{
     }
 
     .hero-section{
-        width: 350px;
+        width: 400px;
         height: 550px;
         justify-content: space-evenly;
         gap: 20px;
         background-size: cover;
         background-repeat: no-repeat;
+        margin: 0 auto;
+        /* text-align: center;
+        margin-left: 30px; */
     }
 
     .hero-section img{
@@ -217,5 +369,48 @@ input[type="text"], .when, .selcet-type, .find-btn{
         border-radius: 8px;
         border: none;
         outline-color: snow;
+    }
+
+
+    /* Our popular tours style*/
+
+    .about-tours{
+        flex-direction: column;
+        width: 375px;
+        text-align: center;
+    }
+
+    .descrip-box h3{
+        margin-left: -100px;
+        padding: 0;
+    }
+
+    .descrip-box ul {
+        font-size: 20px;
+    }
+
+    .descrip-box p{
+        margin-left: 5px;
+        font-size: 20px;
+        width: 380;
+        line-height: 40px;
+    }
+
+    .descrip-box{
+        height: 1000px;
+        width: 400px;
+    }
+
+    .descrip-box button {
+        margin-bottom: 20px;
+    }
+
+    .tour-img{
+        width: 400px;
+        text-align: center;
+    }
+
+    .tour-img img{
+        width: 100%;
     }
 }
