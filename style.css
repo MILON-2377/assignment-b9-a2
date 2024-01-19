@@ -270,7 +270,7 @@ input[type="text"], .when, .selcet-type, .find-btn{
     align-items: center;
 }
 
-.section h3{
+.section h3
     color: #131318;
     text-align: center;
     font-size: 40px;
@@ -330,16 +330,118 @@ input[type="text"], .when, .selcet-type, .find-btn{
     background: rgba(41, 206, 246, 0.05);
 }
 
-.card1 p, .card2 p{
+.card1 p, .card2 p, .price-card p, .discount-container p{
     width: 500px;
+    color: #5A5A5D;;
 }
 
-.hotel-icon i{
+.hotel-icon i, .price-card i{
     font-size: 38px;
     color: #FF5400;
 }
 
 
+/* price container and the price cards */
+
+.price-container{
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.price-card{
+    width: 573px;
+    height: 284px;
+    background: rgba(233, 68, 68, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 30px;
+    margin: 0 auto;
+}
+
+.price-card h4, .discount-container h4, .location-description1 h4{
+    font-size: 32px;
+}
+
+
+/* discounte container */
+
+.discount-container {
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.discount-container p{
+    margin-top: 30px;
+    width: 600;
+}
+
+
+/* location description container box */
+
+.location-container{
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.location-box1{
+    width: 1170px;
+    background-image: url(Group\ 39.png);
+    height: 580px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.location-description1{
+    width: 500px;
+    height: 389px;
+    background: rgba(255, 255, 255, 0.80);
+    border-radius: 10px;
+    margin: 56px 56px 56px 535px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 50px;
+    position: relative;
+    top: 50px;
+}
+
+.location-description1 button {
+    width: 150px;
+    height: 52px;
+    background-color: #FF5400;
+    border: none;
+    border-radius: 8px;
+}
+
+.location-icon-box i{
+    color: #FF5400;
+}
+
+.location-icon-box{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-dollar{
+    color: #FF5400;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.lct-scnd{
+    flex-direction: flex-end;
+}
 /* to make responsive header and hero section */
 
 @media screen and (max-width: 600px) {
@@ -347,27 +449,30 @@ input[type="text"], .when, .selcet-type, .find-btn{
         display: inline-block;
     }
     .header{
-        width: 400px;
+        width: 375px;
         height: 64px;
         justify-content: space-between;
         font-size: 22px;
-        margin: 0 auto;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    .logo-name{
+        width: 260px;
     }
     .logo img{
         width: 60%;
     }
 
     .logo{
-        /* margin-left: -55px; */
+        /* margin-left: -85px; */
     }
 
     .menu-icon {
-        margin-right: 21px;
+        /* margin-right: -5px; */
     }
 
     .logo-name h3{
         font-size: 22px;
-        margin-left: -50px;
     }
 
     .navbar{
@@ -375,15 +480,16 @@ input[type="text"], .when, .selcet-type, .find-btn{
     }
 
     .hero-section{
-        width: 400px;
+        width: 375px;
         height: 550px;
+        background-repeat: no-repeat;
+        background-position-x: -470px;
         justify-content: space-evenly;
         gap: 20px;
         background-size: cover;
-        background-repeat: no-repeat;
         margin: 0 auto;
-        /* text-align: center;
-        margin-left: 30px; */
+        text-align: center;
+        margin-left: 30px;
     }
 
     .hero-section img{
@@ -391,10 +497,7 @@ input[type="text"], .when, .selcet-type, .find-btn{
     }
 
     .hero-section h3{
-        color: #FFF;
-        font-size: 28px;
-        font-weight: 900;
-        margin-top: 20px;
+        font-size: 36px;
     }
 
     .hero-section p{
@@ -411,8 +514,8 @@ input[type="text"], .when, .selcet-type, .find-btn{
         width: 287px;
         height: 250px;
         flex-direction: column;
-        /* justify-content: space-evenly; */
-        grid-area: 80px;
+        justify-content: space-evenly;
+        gap: 10px;
     }
 
     input[type="text"], .when, .selcet-type, .find-btn{
@@ -427,45 +530,99 @@ input[type="text"], .when, .selcet-type, .find-btn{
     }
 
 
-    /* Our popular tours style*/
+    /* Our popular tours container to make responsive*/
 
     .about-tours{
-        flex-direction: column;
         width: 375px;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
-    }
-
-    .descrip-box h3{
-        margin-left: -100px;
-        padding: 0;
-    }
-
-    .descrip-box ul {
-        font-size: 20px;
-    }
-
-    .descrip-box p{
-        margin-left: 5px;
-        font-size: 20px;
-        width: 380;
-        line-height: 40px;
+        margin-left: 30px;
+        /* background-color: #5A5A5D; */
     }
 
     .descrip-box{
-        height: 1000px;
-        width: 400px;
+        width: 370px;
+        margin: 0 auto;
     }
 
-    .descrip-box button {
+    .about-tours-des{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        /* background-color: #5A5A5D; */
+        overflow:auto;
+        margin: 0 auto;
+        margin: 20px 10px;
+    }
+
+    .about-tours-des p, .about-tours-des ul>li{
+        width: 350px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .read-btn{
+        margin: 0 auto;
+        margin-top: 8px;
         margin-bottom: 20px;
     }
 
     .tour-img{
-        width: 400px;
+        width: 375px;
         text-align: center;
     }
 
     .tour-img img{
         width: 100%;
+    }
+
+
+    /* chooose your destination */
+
+    .choose-box{
+        width: 375px;
+    }
+
+    .section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section h3{
+        font-size: 32px;
+        font-weight: 800;
+    }
+
+    .section p{
+        width: 375px;
+        margin: 20px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25px;
+        
+    }
+
+    .img-box1, .img-box2, .img-box3{
+        width: auto;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        background-size: cover;
+       
+    }
+
+    .img-box3, .img-box2{
+        margin-top: -10px;
+    }
+
+    .maldive-img, .indonesia-img, .srilonka-img, 
+    .america-img, .kasmir-img, .bangladesh-img,
+    .bandarban-img
+    {
+        width: 375px;
+        height: 176px;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
 }
