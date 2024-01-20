@@ -270,7 +270,7 @@ input[type="text"], .when, .selcet-type, .find-btn{
     align-items: center;
 }
 
-.section h3
+.section h3{
     color: #131318;
     text-align: center;
     font-size: 40px;
@@ -290,7 +290,7 @@ input[type="text"], .when, .selcet-type, .find-btn{
 /*Why Choose us */
 
 .why-choose{
-    width: 1170px;
+    width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -299,8 +299,17 @@ input[type="text"], .when, .selcet-type, .find-btn{
     margin-top: 50px;
 }
 
+.why-choose>h3{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
 .why-choose p{
-    width: 500;
+    font-size: 16px;
+    width: 300;
+    color: #424247;
+    text-align: center;
+    line-height: 20px;
 }
 
 /* hotel cards */
@@ -388,60 +397,81 @@ input[type="text"], .when, .selcet-type, .find-btn{
 /* location description container box */
 
 .location-container{
-    width: 1170px;
-    margin: 0 auto;
     margin-top: 50px;
 }
 
-.location-box1{
+.location-item1{
     width: 1170px;
+    height: 500px;
     background-image: url(Group\ 39.png);
-    height: 580px;
     background-size: cover;
-    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
 }
 
 .location-description1{
-    width: 500px;
+    width: 579px;
     height: 389px;
-    background: rgba(255, 255, 255, 0.80);
+    border: none;
     border-radius: 10px;
-    margin: 56px 56px 56px 535px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 50px;
-    position: relative;
-    top: 50px;
+    background-color: rgba(255, 255, 255, 0.80);
+    padding: 25px;
+    margin-right: 40px;
+
 }
 
-.location-description1 button {
-    width: 150px;
-    height: 52px;
-    background-color: #FF5400;
-    border: none;
-    border-radius: 8px;
+.location-icon-box{
+    width: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -17px;
 }
 
 .location-icon-box i{
     color: #FF5400;
 }
 
-.location-icon-box{
-    width: 350px;
-    display: flex;
-    justify-content: space-between;
+.location-description1 button{
+    width: 150px;
+    height: 52px;
+    background-color: #FF5400;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
 }
 
 .price-dollar{
-    color: #FF5400;
     font-size: 20px;
-    font-style: bold;
+    font-weight: 800;
+    color: #FF5400;
 }
 
-.lct-scnd{
-    flex-direction: flex-end;
+/* location container 2 */
+
+.location-item2{
+    width: 1170px;
+    height: 500px;
+    background-image: url(Group\ 40.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
+
+.location-desc2{
+    margin-left: 40px;
+}
+
 /* to make responsive header and hero section */
 
 @media screen and (max-width: 600px) {
@@ -590,7 +620,7 @@ input[type="text"], .when, .selcet-type, .find-btn{
         text-align: center;
     }
 
-    .section h3{
+    .section h3, .why-choose h3{
         font-size: 32px;
         font-weight: 800;
     }
@@ -624,5 +654,49 @@ input[type="text"], .when, .selcet-type, .find-btn{
         height: 176px;
         margin: 0 auto;
         margin-bottom: 20px;
+    }
+
+
+    /*why choose container */
+
+    .why-choose{
+        width: 375px;
+    }
+
+    /* hotel cards container */
+
+    .card1, .card2{
+        height: 350px;
+        border-radius: 10px;
+        justify-content: space-evenly;
+    }
+
+    .hotel-card{
+        width: 375px;
+        height: 750px;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .card1 h4, .card2 h4, .price-container h4{
+        font-size: 24px;
+    }
+
+    .card1 p, .card2 p, .price-container p, .price-card{
+        width: 335px;
+    }
+
+    /* price container */
+
+    .price-card{
+        height: 310px;
+        width: 335px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .price-container{
+        margin-top: -5px;
+        width: 375px;
+        height: 400px;
     }
 }
